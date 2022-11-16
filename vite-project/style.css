@@ -13,6 +13,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+}
+
+@font-face {
+  font-family: "JediFont";
+  src: url("assets/Star-Jedi Font/Starjedi Regular.ttf");
 }
 
 a {
@@ -83,6 +89,40 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/*Characters Gallery*/
+.characters {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters section {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #888;
+  border-radius: 15px;
+  font-family: "JediFont";
+  font-size: 12px;
+}
+
+.characters section img {
+  border-radius: 15px 15px 0 0;
+}
+
+/*Character Page */
+.characterInfo {
+  width: 300px;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.characterInfo h1 {
+  text-align: center;
+}
+ 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
