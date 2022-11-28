@@ -114,9 +114,25 @@ button:focus-visible {
 
 /*Character Page */
 .characterInfo {
-  width: 300px;
-  margin: 0 auto;
+  width: 400px;
+  margin: 1em auto;
   padding: 1em;
+  font-family: "JediFont";
+  border-style: solid;
+  border-color: yellow;
+  padding: 1em;
+}
+.characterInfo ul {
+  padding-left: 0;
+}
+
+.characterInfo ul li {
+  list-style: none;
+}
+
+.characterInfo img {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .characterInfo h1 {
