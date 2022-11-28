@@ -39,14 +39,17 @@ async function handleLogin(e) {
     users.forEach((user) => {
         if (data.email === user.email && data.password === user.password) {
             canLogin = true;
+            const userID = user.id;
             window.alert("You have successfully logged in.");
         } else if (data.email == user.email) {
             window.alert("The password you entered is incorrect.");
         } else {
             window.alert("That email was not found in our system.");
         }
+
     })
     if (canLogin) {
+        localStorage.setItem("user", userID);
         // add code for login event
     }
 
