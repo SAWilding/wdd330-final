@@ -5,19 +5,27 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Vite App</title>
   </head>
   <body>
     <header>
-      <div class="leftHeader">
-        <a class="headerLinkLeft" href="#">About</a>
-        <a class="headerLinkLeft" href="#">Build</a>
-        <a class="headerLinkRight signUp" href="#">Sign Up</a>
-        <a class="headerLinkRight " href="#">Gallery</a>
+    <div class="mobile-container">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <div id="myLinks">
+          <a href="#about" class="headerLinkLeft">About</a>
+          <a href="#build" class="headerLinkLeft">Build</a>
+          <a class="logoLink" href="index.html"><img class="headerLogo" src="logo.png"></a>
+          <a href="#gallery" class="headerLinkRight">Gallery</a>
+          <a href="#signUp" class="headerLinkRight signUp">Sign up</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i style="font-size:24px" class="fa">&#xf0c9;</i>
+        </a>
       </div>
-      <div class="middleHeader">
-        <a class="logoLink" href="index.html"><img class="headerLogo" src="logo.png"></a>
-      </div>
+  </div>
     </header>
     <main></main>
     <hr>

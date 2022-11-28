@@ -1,49 +1,134 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    width: 100%;
+    background-color: #e6e6ff;
+  }
+  .headerLinkLeft {
+    text-decoration: none;
+    color: #595959;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-size: 1.2rem;
+  }
+  
+  .headerLinkRight {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+    color: #595959;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  .headerLogo {
+    width: 45%;
+    padding: 15px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
 
-body {
-  margin: 0;
-  padding: 0;
-}
-header {
-  width: 100%;
-  background-color: #e6e6ff;
+  .topnav a.icon {
+    display: none;
+  }
+
+  .signUp {
+    font-weight: bold;
+  }
+
+  #myLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .logoLink {
+    text-align: center;
+  }
+  footer {
+    color: #595959;
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+@media screen and (max-width: 700px) {
+  .headerLinkLeft {
+    text-decoration: none;
+    color: #595959;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .headerLinkRight {
+    margin-top: 0;
+    padding-top: 0;
+    text-decoration: none;
+    color: #595959;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding: 15px;
+    font-size: 1rem;
+  }
+  
+  .headerLogo {
+    display: none
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .signUp {
+    font-weight: bold;
+  }
+
+  .topnav a.icon {
+    display: none;
+  }
 }
 
-.headerLinkLeft {
-  float:left;
-}
+@media screen and (max-width: 400px) {
+  body {
+    font-family: 'Sawarabi Gothic', sans-serif;
+  }
+  
+  .mobile-container {
+    max-width: 480px;
+    margin: auto;
+    border-radius: 10px;
+  }
+  .topnav .logoLink {
+    display: none;
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #e6e6ff;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: #595959;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    text-align: center;
+  }
+  
+  .topnav a.icon {
+    display: block;
+    right: 0;
+    top: 0;
+  }
 
-.headerLinkRight {
-  float: right;
-  margin-top: 0;
-  padding-top: 0;
-}
-
-.headerLogo {
-  width: 15%;
-}
-
-.leftHeader a {
-  text-decoration: none;
-  color: #595959;
-  font-family: 'Sawarabi Gothic', sans-serif;
-  padding: 35px;
-  font-size: 1.2rem;
-}
-
-.leftHeader a:hover {
-  text-decoration: underline;
-}
-
-.middleHeader {
-  text-align: center;
-}
-
-.signUp {
-  font-weight: bold;
-}
-
-footer {
-  color: #595959;
-  font-family: 'Sawarabi Gothic', sans-serif;
+  .headerLogo {
+    width: 5rem;
+  }
+  
 }
