@@ -32,6 +32,51 @@
     text-decoration: underline;
   }
 
+:root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+@font-face {
+  font-family: "JediFont";
+  src: url("assets/Star-Jedi Font/Starjedi Regular.ttf");
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
   .topnav a.icon {
     display: none;
   }
@@ -88,10 +133,64 @@
     display: none;
   }
 }
-
 @media screen and (max-width: 400px) {
   body {
     font-family: 'Sawarabi Gothic', sans-serif;
+}
+/*Characters Gallery*/
+.characters {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters section {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #888;
+  border-radius: 15px;
+  font-family: "JediFont";
+  font-size: 12px;
+}
+
+.characters section img {
+  border-radius: 15px 15px 0 0;
+}
+
+/*Character Page */
+.characterInfo {
+  width: 400px;
+  margin: 1em auto;
+  padding: 1em;
+  font-family: "JediFont";
+  border-style: solid;
+  border-color: yellow;
+  padding: 1em;
+}
+.characterInfo ul {
+  padding-left: 0;
+}
+
+.characterInfo ul li {
+  list-style: none;
+}
+
+.characterInfo img {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.characterInfo h1 {
+  text-align: center;
+}
+ 
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
   }
   
   .mobile-container {
