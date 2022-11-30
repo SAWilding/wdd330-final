@@ -34,20 +34,30 @@ async function handleLogin(e) {
     e.preventDefault();
     var myForm = e.target;
     const users = await authenticationService.getData();
-    const data = formDataToJSON(myForm);
-    var canLogin = false;
-    users.forEach((user) => {
-        if (data.email === user.email && data.password === user.password) {
-            canLogin = true;
-            window.alert("You have successfully logged in.");
-        } else if (data.email == user.email) {
-            window.alert("The password you entered is incorrect.");
+    const formData = formDataToJSON(myForm);
+    var userId = 0;
+    var canLogin = "";
+    for (let i = 0; i < users.length; i++) {
+        if (formData.email === users[i].email && formData.password ===users[i].password) {
+            userId =users[i].id;
+            canLogin = "allow";
+            break;
+        } else if (formData.email == users[i].email) {
+            canLogin = "email found";
+            break;
         } else {
-            window.alert("That email was not found in our system.");
+            canLogin = "nothing found";
         }
-    })
-    if (canLogin) {
+    }
+
+    if (canLogin === "allow") {
+        window.alert("You have successfully logged in.");
+        sessionStorage.setItem("user", userId);
         // add code for login event
+    } else if (canLogin === "email found") {
+        window.alert("The password you entered is incorrect.");
+    } else {
+        window.alert("That email was not found in our system.");
     }
 
     myForm.reset();

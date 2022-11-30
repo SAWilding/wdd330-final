@@ -4,6 +4,11 @@
       "email": "sawilding7@gmail.com",
       "password": "123456",
       "id": 1
+    },
+    {
+      "email": "sethwilding@byui.edu",
+      "password": "gkjhglkjh",
+      "id": 2
     }
   ],
   "userdata": []
