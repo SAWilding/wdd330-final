@@ -6,9 +6,14 @@
       "id": 1
     },
     {
-      "email": "sethwilding@byui.edu",
-      "password": "gkjhglkjh",
+      "email": "user1@email.com",
+      "password": "user123",
       "id": 2
+    },
+    {
+      "email": "sethwilding@byui.edu",
+      "password": "password",
+      "id": 3
     }
   ],
   "userdata": []
