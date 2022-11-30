@@ -1,7 +1,7 @@
 
 
-export default async function fetchJson() {
-  const json = "json/character.json";
+export async function fetchJson() {
+  const json = "../json/character.json";
   const response = await fetch(json);
   return await response.json();
 }
@@ -30,7 +30,12 @@ export default async function fetchJson() {
       location.href = "charInfo.html";
     })
   }
+  
+  const char = document.querySelector(".characters");
+
+  if (char) {
 
   const res = await fetchJson();
 
   res.forEach(displayName);
+  }
