@@ -502,7 +502,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "Wedge Antilles",
       "height": 1.7,
       "mass": 77,
@@ -528,7 +528,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Jek Tono Porkins",
       "height": 1.8,
       "mass": 110,
@@ -551,7 +551,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "Yoda",
       "height": 0.66,
       "mass": 13,
@@ -585,7 +585,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 21,
+      "id": 20,
       "name": "Palpatine",
       "height": 1.78,
       "mass": 75,
@@ -637,7 +637,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 22,
+      "id": 21,
       "name": "Boba Fett",
       "height": 1.83,
       "mass": 78,
@@ -659,7 +659,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "IG-88",
       "height": 1.96,
       "mass": 140,
@@ -701,7 +701,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 24,
+      "id": 23,
       "name": "Bossk",
       "height": 1.90,
       "mass": 113,
@@ -722,7 +722,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 25,
+      "id": 24,
       "name": "Lando Calrissian",
       "height": 1.77,
       "mass": 79,
@@ -748,7 +748,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 26,
+      "id": 25,
       "name": "Lobot",
       "height": 1.75,
       "mass": 79,
@@ -771,7 +771,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 27,
+      "id": 26,
       "name": "Ackbar",
       "height": 1.8,
       "mass": 83,
@@ -803,7 +803,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "Mon Mothma",
       "height": 1.73,
       "gender": "female",
@@ -828,7 +828,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 29,
+      "id": 28,
       "name": "Arvel Crynyd",
       "gender": "male",
       "wiki": "http://starwars.wikia.com/wiki/Arvel_Crynyd",
@@ -846,7 +846,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 30,
+      "id": 29,
       "name": "Wicket Systri Warrick",
       "height": 0.8,
       "mass": 20,
@@ -866,7 +866,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 31,
+      "id": 30,
       "name": "Nien Nunb",
       "height": 1.6,
       "mass": 68,
@@ -888,7 +888,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 32,
+      "id": 31,
       "name": "Qui-Gon Jinn",
       "height": 1.93,
       "mass": 89,
@@ -916,7 +916,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 33,
+      "id": 32,
       "name": "Nute Gunray",
       "height": 1.91,
       "mass": 90,
@@ -937,7 +937,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 34,
+      "id": 33,
       "name": "Finis Valorum",
       "height": 1.7,
       "gender": "male",
@@ -957,7 +957,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 35,
+      "id": 34,
       "name": "Padmé Amidala",
       "height": 1.65,
       "mass": 45,
@@ -986,7 +986,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 36,
+      "id": 35,
       "name": "Jar Jar Binks",
       "height": 1.96,
       "mass": 66,
@@ -1009,7 +1009,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 37,
+      "id": 36,
       "name": "Roos Tarpals",
       "height": 2.24,
       "mass": 82,
@@ -1028,7 +1028,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 38,
+      "id": 37,
       "name": "Rugor Nass",
       "height": 2.06,
       "gender": "male",
@@ -1044,7 +1044,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 39,
+      "id": 38,
       "name": "Ric Olié",
       "height": 1.83,
       "gender": "male",
@@ -1063,7 +1063,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 40,
+      "id": 39,
       "name": "Watto",
       "height": 1.37,
       "gender": "male",
@@ -1081,7 +1081,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 41,
+      "id": 40,
       "name": "Sebulba",
       "height": 1.12,
       "mass": 40,
@@ -1096,7 +1096,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 42,
+      "id": 41,
       "name": "Quarsh Panaka",
       "height": 1.83,
       "gender": "male",
@@ -1120,7 +1120,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 43,
+      "id": 42,
       "name": "Shmi Skywalker",
       "height": 1.63,
       "gender": "female",
@@ -1141,7 +1141,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 44,
+      "id": 43,
       "name": "Darth Maul",
       "height": 1.75,
       "mass": 80,
@@ -1173,7 +1173,7 @@
       ]
     },
     {
-      "id": 45,
+      "id": 44,
       "name": "Bib Fortuna",
       "height": 2,
       "gender": "male",
@@ -1192,7 +1192,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 46,
+      "id": 45,
       "name": "Ayla Secura",
       "height": 1.7,
       "mass": 55,
@@ -1219,7 +1219,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 47,
+      "id": 46,
       "name": "Ratts Tyerell",
       "height": 0.79,
       "mass": 15,
@@ -1236,7 +1236,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 48,
+      "id": 47,
       "name": "Dud Bolt",
       "height": 0.94,
       "mass": 45,
@@ -1251,7 +1251,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 49,
+      "id": 48,
       "name": "Gasgano",
       "height": 1.22,
       "gender": "male",
@@ -1265,7 +1265,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 50,
+      "id": 49,
       "name": "Ben Quadinaros",
       "height": 1.63,
       "mass": 65,
@@ -1280,7 +1280,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 51,
+      "id": 50,
       "name": "Mace Windu",
       "height": 1.92,
       "mass": 84,
@@ -1308,7 +1308,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 52,
+      "id": 51,
       "name": "Ki-Adi-Mundi",
       "height": 1.98,
       "mass": 82,
@@ -1333,7 +1333,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 53,
+      "id": 52,
       "name": "Kit Fisto",
       "height": 1.96,
       "mass": 87,
@@ -1357,7 +1357,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 54,
+      "id": 53,
       "name": "Eeth Koth",
       "height": 1.71,
       "gender": "male",
@@ -1377,7 +1377,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 55,
+      "id": 54,
       "name": "Adi Gallia",
       "height": 1.84,
       "mass": 50,
@@ -1400,7 +1400,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 56,
+      "id": 55,
       "name": "Saesee Tiin",
       "height": 1.93,
       "gender": "male",
@@ -1422,7 +1422,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 57,
+      "id": 56,
       "name": "Yarael Poof",
       "height": 2.64,
       "gender": "male",
@@ -1441,7 +1441,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 58,
+      "id": 57,
       "name": "Plo Koon",
       "height": 1.88,
       "mass": 80,
@@ -1465,7 +1465,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 59,
+      "id": 58,
       "name": "Mas Amedda",
       "height": 1.96,
       "gender": "male",
@@ -1487,7 +1487,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 60,
+      "id": 59,
       "name": "Gregar Typho",
       "height": 1.85,
       "mass": 85,
@@ -1507,7 +1507,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 61,
+      "id": 60,
       "name": "Cordé",
       "height": 1.57,
       "gender": "female",
@@ -1528,7 +1528,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 62,
+      "id": 61,
       "name": "Cliegg Lars",
       "height": 1.83,
       "gender": "male",
@@ -1547,7 +1547,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 63,
+      "id": 62,
       "name": "Poggle the Lesser",
       "height": 1.75,
       "mass": 80,
@@ -1571,7 +1571,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 64,
+      "id": 63,
       "name": "Luminara Unduli",
       "height": 1.76,
       "mass": 56.2,
@@ -1595,7 +1595,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 65,
+      "id": 64,
       "name": "Barriss Offee",
       "height": 1.66,
       "mass": 50,
@@ -1618,7 +1618,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 66,
+      "id": 65,
       "name": "Dormé",
       "height": 1.65,
       "gender": "female",
@@ -1637,7 +1637,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 67,
+      "id": 66,
       "name": "Dooku",
       "height": 1.93,
       "mass": 86,
@@ -1676,7 +1676,7 @@
       ]
     },
     {
-      "id": 68,
+      "id": 67,
       "name": "Bail Prestor Organa",
       "height": 1.91,
       "gender": "male",
@@ -1715,7 +1715,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 69,
+      "id": 68,
       "name": "Jango Fett",
       "height": 1.83,
       "mass": 79,
@@ -1737,7 +1737,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 70,
+      "id": 69,
       "name": "Zam Wesell",
       "height": 1.68,
       "mass": 55,
@@ -1758,7 +1758,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 71,
+      "id": 70,
       "name": "Dexter Jettster",
       "height": 1.88,
       "mass": 102,
@@ -1776,7 +1776,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 72,
+      "id": 71,
       "name": "Lama Su",
       "height": 2.29,
       "mass": 88,
@@ -1793,7 +1793,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 73,
+      "id": 72,
       "name": "Taun We",
       "height": 2.13,
       "gender": "female",
@@ -1809,7 +1809,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 74,
+      "id": 73,
       "name": "Jocasta Nu",
       "height": 1.69,
       "gender": "female",
@@ -1829,7 +1829,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 75,
+      "id": 74,
       "name": "R4-P17",
       "height": 1.09,
       "gender": "female",
@@ -1851,7 +1851,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 76,
+      "id": 75,
       "name": "Wat Tambor",
       "height": 1.98,
       "mass": 48,
@@ -1873,7 +1873,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 77,
+      "id": 76,
       "name": "San Hill",
       "height": 1.91,
       "gender": "male",
@@ -1894,7 +1894,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 78,
+      "id": 77,
       "name": "Shaak Ti",
       "height": 1.87,
       "mass": 57,
@@ -1918,7 +1918,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 79,
+      "id": 78,
       "name": "Grievous",
       "height": 2.16,
       "mass": 159,
@@ -1940,7 +1940,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 80,
+      "id": 79,
       "name": "Tarfful",
       "height": 2.32,
       "mass": 136,
@@ -1958,7 +1958,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 81,
+      "id": 80,
       "name": "Raymus Antilles",
       "height": 1.88,
       "mass": 79,
@@ -1980,7 +1980,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 82,
+      "id": 81,
       "name": "Sly Moore",
       "height": 1.78,
       "mass": 48,
@@ -1999,7 +1999,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 83,
+      "id": 82,
       "name": "Tion Medon",
       "height": 2.06,
       "mass": 80,
@@ -2016,7 +2016,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 84,
+      "id": 83,
       "name": "Finn",
       "height": 1.78,
       "mass": 73,
@@ -2036,7 +2036,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 85,
+      "id": 84,
       "name": "Rey",
       "height": 1.7,
       "mass": 54,
@@ -2057,7 +2057,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 86,
+      "id": 85,
       "name": "Poe Dameron",
       "height": 1.72,
       "mass": 80,
@@ -2083,7 +2083,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 87,
+      "id": 86,
       "name": "BB8",
       "height": 0.67,
       "mass": 18,
@@ -2111,7 +2111,7 @@
       "formerAffiliations": []
     },
     {
-      "id": 88,
+      "id": 87,
       "name": "Captain Phasma",
       "height": 2.0,
       "mass": 76,

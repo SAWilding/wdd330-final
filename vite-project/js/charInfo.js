@@ -1,13 +1,8 @@
-//import fetchJson from "./character";
+import { fetchJson } from "./character.js";
 
 const charId = localStorage.getItem("Character Id");
 console.log(charId);
 
-export default async function fetchJson() {
-    const json = "json/character.json";
-    const response = await fetch(json);
-    return await response.json();
-  }
 
 const res = await fetchJson();
 
