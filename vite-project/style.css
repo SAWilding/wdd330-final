@@ -92,6 +92,22 @@ h1 {
     color: #595959;
     font-family: 'Sawarabi Gothic', sans-serif;
   }
+
+/*Template*/
+.hero {
+  text-align: center;
+}
+
+.template {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.templateForm {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 @media screen and (max-width: 700px) {
   .headerLinkLeft {
     text-decoration: none;
@@ -183,9 +199,6 @@ h1 {
 
 /*Template Page*/
 
-.hero {
-  text-align: center;
-}
 
 
  
@@ -232,4 +245,4 @@ h1 {
     width: 5rem;
   }
   
-}
+}}

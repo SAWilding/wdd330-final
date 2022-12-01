@@ -8,23 +8,46 @@
     <title>Document</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <div class="mobile-container">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <div id="myLinks">
+              <a href="#about" class="headerLinkLeft">About</a>
+              <a href="template.html" class="headerLinkLeft">Build</a>
+              <a class="logoLink" href="../index.html"><img class="headerLogo" src="../logo.png"></a>
+              <a href="#gallery" class="headerLinkRight">Gallery</a>
+              <a href="#signUp" class="headerLinkRight signUp">Sign up</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i style="font-size:24px" class="fa">&#xf0c9;</i>
+            </a>
+          </div>
+      </div>
+    </header>
     <main>
         <div class="hero">
         <h1>Create Your own Star Wars Movie</h1>
         </div>
         <div class="template">
-            <form>
+            <form class="templateForm">
                 <label for="title">Title</label>
                 <input id="title" name="title" type="text"> 
                 <label for="crawl">Title Crawl</label>
                 <textarea name="crawl" id="crawl"></textarea>
+                <label for="characterSelect">Select Character</label>
                 <select id="characterSelect"></select>
+                <label for="planetSelect">Select Planet</label>
+                <select id="planetSelect"></select>
+                <label for="starshipSelect">Select Starship</label>
+                <select id="starshipSelect"></select>
             </form>
         </div>
 
     </main>
-    <footer></footer>
+    <footer>
+        <p>&copy; Company Name 2022 | Not a Real Business</p>
+      </footer>
     
     <script type="module" src="../js/template.js"></script>
 </body>
