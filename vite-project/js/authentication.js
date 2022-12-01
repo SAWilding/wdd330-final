@@ -53,6 +53,7 @@ async function handleLogin(e) {
     if (canLogin === "allow") {
         window.alert("You have successfully logged in.");
         sessionStorage.setItem("user", userId);
+        window.open("../index.html")
         // add code for login event
     } else if (canLogin === "email found") {
         window.alert("The password you entered is incorrect.");
