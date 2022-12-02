@@ -1,8 +1,13 @@
 import { fetchJson } from "./character";
 
-const charSelect = document.querySelector("#characterSelect");
-const planetSelect = document.querySelector("#planetSelect");
-const shipSelect = document.querySelector("#starshipSelect");
+
+const charMenu = document.getElementsByClassName("character");
+const planetMenu = document.getElementsByClassName("planet");
+const shipMenu = document.getElementsByClassName("starship");
+const affilMenu = document.getElementsByClassName("affiliation");
+const castList = document.querySelector(".castHeader");
+castList.style.display = "none";
+
 const apiUrl = "https://swapi.py4e.com/api/";
 
 //Json src
@@ -10,32 +15,91 @@ const res = await fetchJson();
 //API extensions
 const planetsPath = "planets";
 const shipsPath = "starships";
+const affiliations = [
+  "Galactic Republic",
+  "Resistance",
+  "Galactic Empire",
+  "Jedi Order",
+  "Sith",
+  "Trade Federation",
+  "Shadow Collective",
+];
 
-function fillSelectMenu(objects, select) {
+function addSelectMenus(menus, objects) {
+  for (let i = 0; i < menus.length; i++) {
+    const select = document.createElement("select");
+    menus[i].appendChild(select);
+    objects.forEach((object) => {
+      const newOption = document.createElement("option");
+      newOption.setAttribute("value", object.name);
+      newOption.textContent = object.name;
 
-    objects.forEach(object => {
-        const newOption = document.createElement("option");
-        newOption.setAttribute("value", object.name);
-        newOption.textContent = object.name;
-        select.appendChild(newOption);
+      select.appendChild(newOption);
+    });
+  }
+}
 
-    })
+function selectAffilMenu(menus) {
+  for (let i = 0; i < menus.length; i++) {
+    const select = document.createElement("select");
+    menus[i].appendChild(select);
+    affiliations.forEach((affiliation) => {
+      const newOption = document.createElement("option");
+      newOption.setAttribute("value", affiliation);
+      newOption.textContent = affiliation;
+
+      select.appendChild(newOption);
+    });
+  }
+}
+
+function displayFinalStory(spans) {
+  for (let i = 0; i < spans.length; i++) {
+    spans[i].textContent = spans[i].querySelector("select").value;
+  }
+}
+
+function displayCast(spans, objects) {
+  const charList = [];
+  const cast = document.querySelector(".cast");
+  castList.style.display = "block";
+  for (let i = 0; i < spans.length; i++) {
+    const name = spans[i].textContent;
+    objects.forEach((object) => {
+      if (name == object.name) {
+        if (!charList.includes(object.name)) {
+          charList.push(object.name);
+          const img = document.createElement("img");
+          const charName = document.createElement("h3");
+          charName.textContent = object.name;
+          charName.style.textAlign = "center";
+          img.setAttribute("alt", object.name);
+          img.setAttribute("src", object.image);
+          img.setAttribute("width", "200px");
+          img.setAttribute("height", "200px");
+          const charSection = document.createElement("section");
+          charSection.appendChild(img);
+          charSection.appendChild(charName);
+
+          cast.appendChild(charSection);
+        }
+      }
+    });
+  }
 }
 
 async function apiConnect(ext) {
-    try {
-        const response = await fetch(apiUrl + ext);
-        if(response.ok){
-            return await response.json();
-        }
-        else {
-            const error = await response.text()
-            throw new Error(error);
-        }
+  try {
+    const response = await fetch(apiUrl + ext);
+    if (response.ok) {
+      return await response.json();
+    } else {
+      const error = await response.text();
+      throw new Error(error);
     }
-    catch (err){
-        console.log(err);
-    }
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 const planetDetails = await apiConnect(planetsPath);
@@ -43,8 +107,19 @@ const shipDetails = await apiConnect(shipsPath);
 const planets = planetDetails.results;
 const ships = shipDetails.results;
 
+addSelectMenus(charMenu, res);
+addSelectMenus(planetMenu, planets);
+addSelectMenus(shipMenu, ships);
+selectAffilMenu(affilMenu);
 
-
-fillSelectMenu(res, charSelect);
-fillSelectMenu(planets, planetSelect);
-fillSelectMenu(ships, shipSelect);
+const submitButton = document.querySelector(".finish");
+submitButton.addEventListener("click", () => {
+  displayFinalStory(charMenu);
+  displayFinalStory(planetMenu);
+  displayFinalStory(shipMenu);
+  displayFinalStory(affilMenu);
+  const final = document.querySelector(".template1").textContent;
+  console.log(final);
+  submitButton.style.display = "none";
+  displayCast(charMenu, res);
+});
