@@ -63,8 +63,8 @@ function displayFinalStory(spans) {
   }
 }
 
-function displayCast(spans, objects) {
-  const charList = [];
+function displayCast(spans, objects, list) {
+
   document.querySelector(".templateForm").style.display = "none";
   const cast = document.querySelector(".cast");
   castList.style.display = "block";
@@ -73,8 +73,8 @@ function displayCast(spans, objects) {
     const name = spans[i].textContent;
     objects.forEach((object) => {
       if (name == object.name) {
-        if (!charList.includes(object.name)) {
-          charList.push(object.name);
+        if (!list.includes(object.name)) {
+          list.push(object.name);
           const img = document.createElement("img");
           const charName = document.createElement("h3");
           charName.textContent = object.name.toLowerCase();
@@ -119,19 +119,10 @@ addSelectMenus(planetMenu, planets);
 addSelectMenus(shipMenu, ships);
 selectAffilMenu(affilMenu);
 
-const submitButton = document.querySelector(".finish");
-submitButton.addEventListener("click", () => {
-  displayFinalStory(charMenu);
-  displayFinalStory(planetMenu);
-  displayFinalStory(shipMenu);
-  displayFinalStory(affilMenu);
-  //const final = document.querySelector(".template1");
-  //console.log(final);
-  submitButton.style.display = "none";
-  displayCast(charMenu, res);
+function createCrawl() {
   const story = document.querySelector(".template")
+  console.log(story.textContent);
   story.style.textTransform = "uppercase";
-  //Title Crawl
   const crawl = document.querySelector(".crawl");
   const crawlContent = document.querySelector(".crawlContent");
   crawl.style.transform = "rotate3d(1, 0, 0, 45deg)";
@@ -141,6 +132,19 @@ submitButton.addEventListener("click", () => {
   story.style.fontSize = "2vw";
   story.style.color = "yellow";
   story.style.perspective= "calc(100vh * 0.6)";
+}
 
+const submitButton = document.querySelector(".finish");
+submitButton.addEventListener("click", () => {
+  const charList = [];
+  displayFinalStory(charMenu);
+  displayFinalStory(planetMenu);
+  displayFinalStory(shipMenu);
+  displayFinalStory(affilMenu);
+  submitButton.style.display = "none";
+  displayCast(charMenu, res, charList);
+  
+  //Title Crawl
+  createCrawl();
 
 });
