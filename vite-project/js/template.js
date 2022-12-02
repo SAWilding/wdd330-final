@@ -129,7 +129,18 @@ submitButton.addEventListener("click", () => {
   //console.log(final);
   submitButton.style.display = "none";
   displayCast(charMenu, res);
-  const story = document.querySelector(".template1")
+  const story = document.querySelector(".template")
   story.style.textTransform = "uppercase";
-  
+  //Title Crawl
+  const crawl = document.querySelector(".crawl");
+  const crawlContent = document.querySelector(".crawlContent");
+  crawl.style.transform = "rotate3d(1, 0, 0, 45deg)";
+  crawl.style.transformOrigin = "50% 100%";
+  crawlContent.style.animation = "titlecrawl 60s linear infinite";
+  story.style.height = "300px";
+  story.style.fontSize = "2vw";
+  story.style.color = "yellow";
+  story.style.perspective= "calc(100vh * 0.6)";
+
+
 });
