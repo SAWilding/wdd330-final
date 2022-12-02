@@ -20,9 +20,9 @@ function displayCharInfo(objects) {
             const species = document.createElement("p");
         
     
-            charName.textContent = object.name;
-            charHomeWorld.textContent = `Home World: ${object.homeworld}`;
-            species.textContent = `Species: ${object.species}`;
+            charName.textContent = object.name.toLowerCase();
+            charHomeWorld.textContent = `Home World: ${object.homeworld.toLowerCase()}`;
+            species.textContent = `Species: ${object.species.toLowerCase()}`;
             charImage.setAttribute("src", object.image);
             charImage.setAttribute("width", "300px");
             
@@ -34,7 +34,7 @@ function displayCharInfo(objects) {
             charAffiliations.forEach(affiliation => {
                 affiliationLabel.textContent = "Affiliations: "
                 const li = document.createElement("li");
-                li.textContent = affiliation;
+                li.textContent = affiliation.toLowerCase();
                 affiliations.appendChild(li);
             });
         }

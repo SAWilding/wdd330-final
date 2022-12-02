@@ -12,7 +12,7 @@ export async function fetchJson() {
     const section = document.createElement("section");
     const name = document.createElement("h3");
     const charImage = document.createElement("img");
-    name.textContent = characters.name;
+    name.textContent = characters.name.toLowerCase();
     name.style.textAlign = "center";
     charImage.setAttribute("src", characters.image);
     charImage.setAttribute("width", "200px");

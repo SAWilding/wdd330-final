@@ -32,7 +32,7 @@ function addSelectMenus(menus, objects) {
     objects.forEach((object) => {
       const newOption = document.createElement("option");
       newOption.setAttribute("value", object.name);
-      newOption.textContent = object.name;
+      newOption.textContent = object.name.toLowerCase();
 
       select.appendChild(newOption);
     });
@@ -54,6 +54,10 @@ function selectAffilMenu(menus) {
 }
 
 function displayFinalStory(spans) {
+  const title = document.querySelector("#title").value;
+  const titleDisplay = document.querySelector(".movieTitle");
+  titleDisplay.textContent = title.toLowerCase();
+  titleDisplay.style.textAlign = "center";
   for (let i = 0; i < spans.length; i++) {
     spans[i].textContent = spans[i].querySelector("select").value;
   }
@@ -61,8 +65,10 @@ function displayFinalStory(spans) {
 
 function displayCast(spans, objects) {
   const charList = [];
+  document.querySelector(".templateForm").style.display = "none";
   const cast = document.querySelector(".cast");
   castList.style.display = "block";
+  castList.style.fontFamily = "JediFont";
   for (let i = 0; i < spans.length; i++) {
     const name = spans[i].textContent;
     objects.forEach((object) => {
@@ -71,7 +77,7 @@ function displayCast(spans, objects) {
           charList.push(object.name);
           const img = document.createElement("img");
           const charName = document.createElement("h3");
-          charName.textContent = object.name;
+          charName.textContent = object.name.toLowerCase();
           charName.style.textAlign = "center";
           img.setAttribute("alt", object.name);
           img.setAttribute("src", object.image);
@@ -83,6 +89,7 @@ function displayCast(spans, objects) {
 
           cast.appendChild(charSection);
         }
+        
       }
     });
   }
@@ -118,8 +125,12 @@ submitButton.addEventListener("click", () => {
   displayFinalStory(planetMenu);
   displayFinalStory(shipMenu);
   displayFinalStory(affilMenu);
-  const final = document.querySelector(".template1").textContent;
+  const final = document.querySelector(".template1");
   console.log(final);
   submitButton.style.display = "none";
   displayCast(charMenu, res);
+  const story = document.querySelector(".template")
+  story.style.fontFamily = "JediFont";
+  story.style.textTransform = "lowercase";
+  
 });
