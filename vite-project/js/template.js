@@ -1,5 +1,5 @@
 import { fetchJson } from "./character";
-
+import DataService from "./dataService";
 
 const charMenu = document.getElementsByClassName("character");
 const planetMenu = document.getElementsByClassName("planet");
@@ -119,8 +119,20 @@ addSelectMenus(planetMenu, planets);
 addSelectMenus(shipMenu, ships);
 selectAffilMenu(affilMenu);
 
+const dataService = new DataService("userData");
+
+var canSaveData = false;
+const userId = sessionStorage.getItem("user");
+
+if (userId !== undefined) {
+  canSaveData = true;
+  console.log("The user can save data");
+}
+
+
 const submitButton = document.querySelector(".finish");
 submitButton.addEventListener("click", () => {
+
   displayFinalStory(charMenu);
   displayFinalStory(planetMenu);
   displayFinalStory(shipMenu);
@@ -130,6 +142,7 @@ submitButton.addEventListener("click", () => {
   submitButton.style.display = "none";
   displayCast(charMenu, res);
   const story = document.querySelector(".template")
+
   story.style.textTransform = "uppercase";
   //Title Crawl
   const crawl = document.querySelector(".crawl");
@@ -142,5 +155,8 @@ submitButton.addEventListener("click", () => {
   story.style.color = "yellow";
   story.style.perspective= "calc(100vh * 0.6)";
 
-
+  if (canSaveData) {
+    const saveData = {"userId": userId, "story": story.textContent};
+    dataService.postData(saveData);
+  }
 });
