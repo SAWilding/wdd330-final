@@ -121,7 +121,7 @@ selectAffilMenu(affilMenu);
 
 function createCrawl() {
   const story = document.querySelector(".template")
-  console.log(story.textContent);
+  
   story.style.textTransform = "uppercase";
   const crawl = document.querySelector(".crawl");
   const crawlContent = document.querySelector(".crawlContent");
@@ -143,7 +143,8 @@ submitButton.addEventListener("click", () => {
   displayFinalStory(affilMenu);
   submitButton.style.display = "none";
   displayCast(charMenu, res, charList);
-  
+  const test = document.querySelector(".crawl").textContent;
+  console.log(test);
   //Title Crawl
   createCrawl();
 

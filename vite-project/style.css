@@ -262,6 +262,7 @@ h1 {
   background-color: black;
   border-style: solid;
   border-color: yellow;
+  margin: 0 auto;
 }
 
 select {
