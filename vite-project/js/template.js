@@ -125,12 +125,11 @@ submitButton.addEventListener("click", () => {
   displayFinalStory(planetMenu);
   displayFinalStory(shipMenu);
   displayFinalStory(affilMenu);
-  const final = document.querySelector(".template1");
-  console.log(final);
+  //const final = document.querySelector(".template1");
+  //console.log(final);
   submitButton.style.display = "none";
   displayCast(charMenu, res);
-  const story = document.querySelector(".template")
-  story.style.fontFamily = "JediFont";
-  story.style.textTransform = "lowercase";
+  const story = document.querySelector(".template1")
+  story.style.textTransform = "uppercase";
   
 });

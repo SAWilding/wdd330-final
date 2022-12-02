@@ -155,7 +155,8 @@ h1 {
 }
 
 .template1 {
-  text-align: center;
+  text-align: start;
+  font-family: sans-serif;
 }
 
 .templateForm {
@@ -169,11 +170,14 @@ h1 {
   border-style: solid;
   border-color: yellow;
   width: fit-content;
+  font-family: "JediFont";
+  
 }
 
 .cast {
   display: flex;
   flex-wrap: wrap;
+  font-family: "JediFont";
 }
 
 .cast section {
@@ -197,6 +201,11 @@ select {
   background-color: black;
   border-style: solid;
   border-color: yellow;
+}
+
+.movieTitle {
+  font-family: sans-serif;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 700px) {
