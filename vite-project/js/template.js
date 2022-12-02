@@ -124,7 +124,7 @@ const dataService = new DataService("userData");
 var canSaveData = false;
 const userId = sessionStorage.getItem("user");
 
-if (userId !== undefined) {
+if (userId !== null) {
   canSaveData = true;
   console.log("The user can save data");
 }
@@ -156,7 +156,12 @@ submitButton.addEventListener("click", () => {
   submitButton.style.display = "none";
   displayCast(charMenu, res, charList);
   const storyText = document.querySelector(".crawl").textContent;
-  console.log(storyText);
+
+  if (canSaveData) {
+    const saveData = {"user": userId, "story": storyText, "cast": charList};
+    dataService.postData(saveData);
+
+  }
   //Title Crawl
   createCrawl();
 
