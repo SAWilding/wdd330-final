@@ -22,7 +22,9 @@ function displayCharInfo(objects) {
       const species = document.createElement("p");
 
       charName.textContent = object.name.toLowerCase();
+      if (object.homeworld != null) {
       charHomeWorld.textContent = `Home World: ${object.homeworld.toLowerCase()}`;
+      }
       species.textContent = `Species: ${object.species.toLowerCase()}`;
       charImage.setAttribute("src", object.image);
       charImage.setAttribute("width", "300px");
