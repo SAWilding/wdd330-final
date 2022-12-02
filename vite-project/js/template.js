@@ -143,8 +143,8 @@ submitButton.addEventListener("click", () => {
   displayFinalStory(affilMenu);
   submitButton.style.display = "none";
   displayCast(charMenu, res, charList);
-  const test = document.querySelector(".crawl").textContent;
-  console.log(test);
+  const storyText = document.querySelector(".crawl").textContent;
+  console.log(storyText);
   //Title Crawl
   createCrawl();
 
