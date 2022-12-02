@@ -93,6 +93,56 @@ h1 {
     font-family: 'Sawarabi Gothic', sans-serif;
   }
 
+  /* Register page start */
+  .registerContent {
+    margin: 1rem auto;
+    background-color: #e6e6ff;
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+  }
+
+  .registerContent p {
+    font-size: 1.5rem;
+  }
+
+  .registerContent form {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .registerContent form input, 
+  .registerContent form label{
+    display: block;
+  }
+
+  .registerContent form label {
+    margin: 0.5rem;
+  }
+  .registerContent form input {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    max-width: 175px;
+  }
+
+  .submitButton {
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px 5px #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  .submitButton:hover {
+    background-color: white;
+    color: gray;
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  /* Register page end */
+
 /*Characters Gallery*/
 .characters {
   padding: 1em;
@@ -115,6 +165,8 @@ h1 {
 .characters section img {
   border-radius: 15px 15px 0 0;
 }
+
+
 
 /*Character Page */
 .characterInfo {
