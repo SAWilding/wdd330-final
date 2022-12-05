@@ -96,19 +96,20 @@ h1 {
   /* Register page start */
   .registerContent {
     margin: 1rem auto;
-    background-color: #e6e6ff;
+    background-color: #595959;
     max-width: 400px;
     padding: 1rem;
     border-radius: 10px;
-    color: black;
+    color: white;
   }
 
   .registerContent p {
     font-size: 1.5rem;
+    font-family: "JediFont", Arial, Helvetica, sans-serif;
   }
 
   .registerContent form {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
   }
 
@@ -126,14 +127,7 @@ h1 {
     max-width: 175px;
   }
 
-  .submitButton {
-    background-color: gray;
-    color: white;
-    box-shadow: 2px 2px 5px #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-  }
+
 
   .submitButton:hover {
     background-color: white;
