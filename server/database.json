@@ -14,6 +14,11 @@
       "email": "sethwilding@byui.edu",
       "password": "password",
       "id": 3
+    },
+    {
+      "email": "dtscott98@gmail.com",
+      "password": "fallout",
+      "id": 4
     }
   ],
   "userdata": []
