@@ -29,7 +29,14 @@
         "Luke Skywalker"
       ],
       "id": 1
+    },
+    {
+      "user": "4",
+      "story": "\n          \n          test\n        \n          After a decade of peace in the galaxy, the\n          Galactic Republic\n          has struck again!\n          Luke Skywalker\n          along with the help of the\n          Galactic Republic\n          have set up base on\n          Tatooine\n          in order to devise a defensive strategy. Meanwhile\n          Luke Skywalker\n          has launched a fleet of\n          CR90 corvettes to attack the planet\n         Tatooine. Many hope that\n          Luke Skywalker\n          who has been a hero to the galaxy in the past will rise again to\n          defeat the\n          Galactic Republic\n          once and for all.\n        \n        \n        \n        ",
+      "cast": [
+        "Luke Skywalker"
+      ],
+      "id": 2
     }
-
   ]
 }
