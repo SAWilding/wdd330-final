@@ -7,6 +7,5 @@ function myFunction() {
     }
   }
 
-  // Posters Page
 
   
