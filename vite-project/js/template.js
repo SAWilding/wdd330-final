@@ -1,5 +1,5 @@
 import { fetchJson } from "./character";
-
+import DataService from "./dataService";
 
 const charMenu = document.getElementsByClassName("character");
 const planetMenu = document.getElementsByClassName("planet");
@@ -119,6 +119,17 @@ addSelectMenus(planetMenu, planets);
 addSelectMenus(shipMenu, ships);
 selectAffilMenu(affilMenu);
 
+const dataService = new DataService("userData");
+
+var canSaveData = false;
+const userId = sessionStorage.getItem("user");
+
+if (userId !== null) {
+  canSaveData = true;
+  console.log("The user can save data");
+}
+
+
 function createCrawl() {
   const story = document.querySelector(".template")
   
@@ -134,6 +145,7 @@ function createCrawl() {
   story.style.perspective= "calc(100vh * 0.6)";
 }
 
+
 const submitButton = document.querySelector(".finish");
 submitButton.addEventListener("click", () => {
   const charList = [];
@@ -144,8 +156,14 @@ submitButton.addEventListener("click", () => {
   submitButton.style.display = "none";
   displayCast(charMenu, res, charList);
   const storyText = document.querySelector(".crawl").textContent;
-  console.log(storyText);
+
+  if (canSaveData) {
+    const saveData = {"user": userId, "story": storyText, "cast": charList};
+    dataService.postData(saveData);
+
+  }
   //Title Crawl
   createCrawl();
 
 });
+
