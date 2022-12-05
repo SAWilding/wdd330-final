@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="#about" class="headerLinkLeft">About</a>
+            <a href="template.html" class="headerLinkLeft">Build</a>
+            <a class="logoLink" href="../index.html"
+              ><img class="headerLogo" src="../logo.png"
+            /></a>
+            <a href="character.html" class="headerLinkRight">Characters</a>
+            <a href="#signUp" class="headerLinkRight signUp">Sign up</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i style="font-size: 24px" class="fa">&#xf0c9;</i>
+          </a>
+        </div>
+      </div>
+    </header>
     <div class="characterInfo"></div>
-
-<script type="module" src="../js/charInfo.js"></script>
-</body>
+    <footer>
+      <p>&copy; Company Name 2022 | Not a Real Business</p>
+    </footer>
+    <script type="module" src="../js/charInfo.js"></script>
+  </body>
 </html>

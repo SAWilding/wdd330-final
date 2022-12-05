@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Document</title>
-</head>
-<body>
-    <header></header>
+  </head>
+  <body>
+    <header>
+      <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <div id="myLinks">
+            <a href="#about" class="headerLinkLeft">About</a>
+            <a href="template.html" class="headerLinkLeft">Build</a>
+            <a class="logoLink" href="../index.html"
+              ><img class="headerLogo" src="../logo.png"
+            /></a>
+            <a href="character.html" class="headerLinkRight">Characters</a>
+            <a href="#signUp" class="headerLinkRight signUp">Sign up</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i style="font-size: 24px" class="fa">&#xf0c9;</i>
+          </a>
+        </div>
+      </div>
+    </header>
     <main>
-        <div class="hero">
+      <div class="hero">
         <h1>Create Your own Star Wars Movie</h1>
+      </div>
+      <div class="template">
+        
+        <form class="templateForm">
+          <label for="title">Title</label>
+          <input id="title" name="title" type="text" />
+        </form>
+        <div class="crawl">
+          <div class="crawlContent">
+          <h2 class="movieTitle"></h2>
+        <p class="template1">
+          After a decade of peace in the galaxy, the
+          <span class="affiliation"></span>
+          has struck again!
+          <span class="character"></span>
+          along with the help of the
+          <span class="affiliation"></span>
+          have set up base on
+          <span class="planet"></span>
+          in order to devise a defensive strategy. Meanwhile
+          <span class="character"></span>
+          has launched a fleet of
+          <span class="starship"></span>s to attack the planet
+         <span class="planet"></span>. Many hope that
+          <span class="character"></span>
+          who has been a hero to the galaxy in the past will rise again to
+          defeat the
+          <span class="affiliation"></span>
+          once and for all.
+        </p>
         </div>
-        <div class="template">
-            <form>
-                <label for="title">Title</label>
-                <input id="title" name="title" type="text"> 
-                <label for="crawl">Title Crawl</label>
-                <textarea name="crawl" id="crawl"></textarea>
-                <select id="characterSelect"></select>
-            </form>
+        
         </div>
-
+        <button class="finish">Submit</button>
+      </div>
+      
+      <div class="castHeader">
+        <h2>Cast</h2>
+      <div class="cast"></div>
+      </div>
+      <div class="test"></div>
     </main>
-    <footer></footer>
-    
+    <footer>
+      <p>&copy; Company Name 2022 | Not a Real Business</p>
+    </footer>
     <script type="module" src="../js/template.js"></script>
-</body>
+  </body>
 </html>

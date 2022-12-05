@@ -92,6 +92,209 @@ h1 {
     color: #595959;
     font-family: 'Sawarabi Gothic', sans-serif;
   }
+
+  /* Register page start */
+  .registerContent {
+    margin: 1rem auto;
+    background-color: #e6e6ff;
+    max-width: 400px;
+    padding: 1rem;
+    border-radius: 10px;
+    color: black;
+  }
+
+  .registerContent p {
+    font-size: 1.5rem;
+  }
+
+  .registerContent form {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+
+  .registerContent form input, 
+  .registerContent form label{
+    display: block;
+  }
+
+  .registerContent form label {
+    margin: 0.5rem;
+  }
+  .registerContent form input {
+    margin: 1rem 0.5rem;
+    padding: 0.5rem;
+    max-width: 175px;
+  }
+
+  .submitButton {
+    background-color: gray;
+    color: white;
+    box-shadow: 2px 2px 5px #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+  }
+
+  .submitButton:hover {
+    background-color: white;
+    color: gray;
+    box-shadow: 2px 2px 5px gray;
+  }
+
+  /* Register page end */
+
+/*Characters Gallery*/
+.characters {
+  padding: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.characters section {
+  margin: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #888;
+  border-radius: 15px;
+  font-family: "JediFont";
+  font-size: 12px;
+}
+
+.characters section img {
+  border-radius: 15px 15px 0 0;
+}
+
+
+
+/*Character Page */
+.characterInfo {
+  width: 400px;
+  margin: 1em auto;
+  padding: 1em;
+  font-family: "JediFont";
+  border-style: solid;
+  border-color: yellow;
+  padding: 1em;
+}
+.characterInfo ul {
+  padding-left: 0;
+}
+
+.characterInfo ul li {
+  list-style: none;
+}
+
+.characterInfo img {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.characterInfo h1 {
+  text-align: center;
+}
+
+
+/*Template*/
+.hero {
+  text-align: center;
+}
+
+/* .crawl {
+  transform: rotate3d(1, 0, 0, 45deg);
+  transform-origin: 50% 100%;
+
+}*/
+
+
+
+.template {
+  width: 70%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* .template {
+  font-size: 2vw;
+  height: 300px;
+} */
+
+.template1 {
+  
+  text-align: start;
+  font-family: sans-serif;
+  
+  
+}
+
+.templateForm {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.castHeader {
+  padding: 1em;
+  margin: 1em auto;
+  border-style: solid;
+  border-color: yellow;
+  width: fit-content;
+  font-family: "JediFont";
+}
+
+.cast {
+  
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "JediFont";
+}
+
+.cast section {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.finish {
+  width: 100px;
+  height: 30px;
+  color: yellow;
+  font-family: "JediFont";
+  background-color: black;
+  border-style: solid;
+  border-color: yellow;
+  margin: 0 auto;
+}
+
+select {
+  color: yellow;
+  font-family: "JediFont";
+  background-color: black;
+  border-style: solid;
+  border-color: yellow;
+}
+
+.movieTitle {
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes titlecrawl {
+  from { -webkit-transform: translateY(100%); }
+  to { -webkit-transform: translateY(-100%); }
+}
+
+@keyframes titlecrawl {
+  from {
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+  }
+  to {
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }}
+
 @media screen and (max-width: 700px) {
   .headerLinkLeft {
     text-decoration: none;
@@ -131,61 +334,8 @@ h1 {
   body {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
-/*Characters Gallery*/
-.characters {
-  padding: 1em;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.characters section {
-  margin: 10px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #888;
-  border-radius: 15px;
-  font-family: "JediFont";
-  font-size: 12px;
-}
-
-.characters section img {
-  border-radius: 15px 15px 0 0;
-}
-
-/*Character Page */
-.characterInfo {
-  width: 400px;
-  margin: 1em auto;
-  padding: 1em;
-  font-family: "JediFont";
-  border-style: solid;
-  border-color: yellow;
-  padding: 1em;
-}
-.characterInfo ul {
-  padding-left: 0;
-}
-
-.characterInfo ul li {
-  list-style: none;
-}
-
-.characterInfo img {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
-.characterInfo h1 {
-  text-align: center;
-}
 
 /*Template Page*/
-
-.hero {
-  text-align: center;
-}
 
 
  
@@ -231,7 +381,6 @@ h1 {
   .headerLogo {
     width: 5rem;
   }
-  
 }
 }
 
@@ -345,3 +494,5 @@ h1 {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
+}}
+

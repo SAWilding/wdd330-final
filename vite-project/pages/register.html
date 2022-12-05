@@ -4,36 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
     <script src="../js/authentication.js" type="module" defer></script>
 </head>
 <body>
     <header>
-
-    </header>
+        <div class="mobile-container">
+          <!-- Top Navigation Menu -->
+          <div class="topnav">
+            <div id="myLinks">
+              <a href="#about" class="headerLinkLeft">About</a>
+              <a href="./template.html" class="headerLinkLeft">Build</a>
+              <a class="logoLink" href="../index.html"><img class="headerLogo" src="../logo.png"></a>
+              <a href="./character.html" class="headerLinkRight">Gallery</a>
+              <a href="#" class="headerLinkRight signUp">Sign up</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i style="font-size:24px" class="fa">&#xf0c9;</i>
+            </a>
+          </div>
+      </div>
+        </header>
     <main>
-        <form name="register" id="registerForm">
-            <label for="email">
-                <input type="email" name="email" required>
-            </label>
-            <label for="password">
-                <input type="password" name="password" required minlength="6">
-            </label>
-            <input type="submit" value="Register">
-        </form>
-        <br>
-        <form name="login" id="loginForm">
-            <label for="email">
-                <input type="email" name="email" required>
-            </label>
-            <label for="password">
-                <input type="password" name="password" required minlength="6">
-            </label>
-            <input type="submit" value="Login">
-        </form>
+        <div class="registerContent">
+            <p>Register</p>
+            <form name="register" id="registerForm">
+                <label for="email">
+    
+                    <input type="email" name="email" placeholder="Email" required>
+                </label>
+                <label for="password">
+                    
+                    <input type="password" name="password" required placeholder="Password" minlength="6">
+                </label>
+                <input type="submit" value="Register" class="submitButton">
+            </form>
+            <br>
+            <p>Login</p>
+            <form name="login" id="loginForm">
+                <label for="email">
+    
+                    <input type="email" name="email" placeholder="Email" required>
+                </label>
+                <label for="password">
+                    
+                    <input type="password" name="password" placeholder="Password" required minlength="6">
+                </label>
+                <input type="submit" value="Login" class="submitButton">
+            </form>
+
+        </div>
     </main>
     <footer>
-
+        <p>&copy; Company Name 2022 | Not a Real Business</p>
     </footer>
 </body>
 </html>
