@@ -53,7 +53,7 @@ async function handleLogin(e) {
     if (canLogin === "allow") {
         window.alert("You have successfully logged in.");
         sessionStorage.setItem("user", userId);
-        window.open("../index.html")
+        window.open("./template.html");
         // add code for login event
     } else if (canLogin === "email found") {
         window.alert("The password you entered is incorrect.");
@@ -66,3 +66,11 @@ async function handleLogin(e) {
 
 document.querySelector('#registerForm').addEventListener('submit', handleRegister);
 document.querySelector('#loginForm').addEventListener('submit', handleLogin);
+
+const userId = sessionStorage.getItem("user");
+if (userId !== null) {
+    document.querySelector(".registerContent").style.display = "none";
+
+} else {
+    document.querySelector(".loggedIn").style.display = "none";
+}
