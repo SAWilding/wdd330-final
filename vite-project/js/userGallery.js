@@ -6,4 +6,5 @@ const users = await service.getData();
 
 const userId = sessionStorage.getItem("user");
 
-console.log(users);
+
+
