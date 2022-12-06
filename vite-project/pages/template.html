@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="../images/tab.png" />
+    <title>Title Crawl Builder</title>
   </head>
   <body>
     <header>
@@ -13,13 +14,16 @@
         <!-- Top Navigation Menu -->
         <div class="topnav">
           <div id="myLinks">
-            <a href="#about" class="headerLinkLeft">About</a>
+            <a href="posters.html" class="headerLinkLeft">Posters</a>
             <a href="template.html" class="headerLinkLeft">Build</a>
             <a class="logoLink" href="../index.html"
-              ><img class="headerLogo" src="../logo.png"
+              ><img class="headerLogo" src="../images/final_logo.png"
             /></a>
             <a href="character.html" class="headerLinkRight">Characters</a>
-            <a href="#signUp" id="sign-up" class="headerLinkRight signUp"
+            <a
+              href="./register.html"
+              id="sign-up"
+              class="headerLinkRight signUp"
               >Sign up</a
             >
           </div>
@@ -118,19 +122,26 @@
           <span class="character"></span> finally gains the high ground and
           strikes <span class="character"></span> down. with this victory, the
           <span class="affiliation"></span>
-          retreats and the <span class="affiliation"></span> gains control of the
-          Galaxy once more. <span id="finalOption">
-          <select id="option">
-            <option>Peace</option>
-            <option>Chaos</option>
-          </select></span> is restored.
-          
+          retreats and the <span class="affiliation"></span> gains control of
+          the Galaxy once more.
+          <span id="finalOption">
+            <select id="option">
+              <option>Peace</option>
+              <option>Chaos</option>
+            </select></span
+          >
+          is restored.
         </p>
         <button class="finish">Submit</button>
       </div>
+      <audio
+        src="../assets/star-wars-theme.mp3"
+        id="SWTheme"
+        style="display: none"
+      ></audio>
     </main>
     <footer>
-      <p>&copy; Company Name 2022 | Not a Real Business</p>
+      <p>&copy; Your Rise to the Force 2022 | Not a Real Business</p>
     </footer>
     <script type="module" src="../js/template.js"></script>
   </body>

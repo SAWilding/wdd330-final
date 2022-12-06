@@ -142,8 +142,10 @@ export function createCrawl() {
   story.style.perspective = "calc(100vh * 0.6)";
 }
 
+const swAudio = document.querySelector("#SWTheme");
 const submitButton = document.querySelector(".finish");
 submitButton.addEventListener("click", () => {
+  swAudio.play();
   const charList = [];
   const ending = document.querySelector("#option").value;
   const finalOption = document.querySelector("#finalOption");
