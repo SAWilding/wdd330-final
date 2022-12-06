@@ -142,6 +142,51 @@ export function createCrawl() {
   story.style.perspective = "calc(100vh * 0.6)";
 }
 
+function addPronouns(objects) {
+  objects.forEach(object => {
+    if (document.querySelector("#char1").textContent == object.name) {
+      if (object.gender == "male") {
+      document.querySelector("#pn1").textContent = "his";
+      document.querySelector("#pn2").textContent = "his";
+      document.querySelector("#pn3").textContent = "he";
+      document.querySelector("#pn4").textContent = "him";
+      document.querySelector("#pn5").textContent = "he";
+      
+      }
+      else {
+        document.querySelector("#pn1").textContent = "her";
+        document.querySelector("#pn2").textContent = "her";
+        document.querySelector("#pn3").textContent = "she";
+        document.querySelector("#pn4").textContent = "her";
+        document.querySelector("#pn5").textContent = "she";
+      }
+    }
+    if (document.querySelector("#char2").textContent == object.name) {
+      if (object.gender == "male") {
+        document.querySelector("#pn6").textContent = "he";
+        document.querySelector("#pn7").textContent = "his";
+      }
+      else {
+        document.querySelector("#pn6").textContent = "she";
+        document.querySelector("#pn7").textContent = "her";
+      }
+    }
+    if (document.querySelector("#char3").textContent == object.name) {
+      if (object.gender == "male") {
+        document.querySelector("#pn8").textContent = "his";
+        document.querySelector("#pn9").textContent = "he";
+        document.querySelector("#pn10").textContent = "he";
+      }
+      else {
+        document.querySelector("#pn8").textContent = "her";
+        document.querySelector("#pn9").textContent = "she";
+        document.querySelector("#pn10").textContent = "she";
+      }
+    }
+  })
+
+}
+
 const swAudio = document.querySelector("#SWTheme");
 const submitButton = document.querySelector(".finish");
 submitButton.addEventListener("click", () => {
@@ -156,6 +201,7 @@ submitButton.addEventListener("click", () => {
   displayFinalStory(affilMenu);
   submitButton.style.display = "none";
   displayCast(charMenu, res, charList);
+  addPronouns(res);
   const storyText = document.querySelector(".template1").textContent;
   const storyTitle = document.querySelector("#title").value;
   const plot1 = document.querySelector(".plot1").textContent;
