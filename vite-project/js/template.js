@@ -64,7 +64,6 @@ function displayFinalStory(spans) {
 }
 
 function displayCast(spans, objects, list) {
-
   document.querySelector(".templateForm").style.display = "none";
   const cast = document.querySelector(".cast");
   castList.style.display = "block";
@@ -89,7 +88,6 @@ function displayCast(spans, objects, list) {
 
           cast.appendChild(charSection);
         }
-        
       }
     });
   }
@@ -129,10 +127,9 @@ if (userId !== null) {
   console.log("The user can save data");
 }
 
+export function createCrawl() {
+  const story = document.querySelector(".template");
 
-function createCrawl() {
-  const story = document.querySelector(".template")
-  
   story.style.textTransform = "uppercase";
   const crawl = document.querySelector(".crawl");
   const crawlContent = document.querySelector(".crawlContent");
@@ -142,28 +139,49 @@ function createCrawl() {
   story.style.height = "300px";
   story.style.fontSize = "2vw";
   story.style.color = "yellow";
-  story.style.perspective= "calc(100vh * 0.6)";
+  story.style.perspective = "calc(100vh * 0.6)";
 }
-
 
 const submitButton = document.querySelector(".finish");
 submitButton.addEventListener("click", () => {
   const charList = [];
+  const ending = document.querySelector("#option").value;
+  const finalOption = document.querySelector("#finalOption");
+  finalOption.textContent = ending;
   displayFinalStory(charMenu);
   displayFinalStory(planetMenu);
   displayFinalStory(shipMenu);
   displayFinalStory(affilMenu);
   submitButton.style.display = "none";
   displayCast(charMenu, res, charList);
-  const storyText = document.querySelector(".crawl").textContent;
+  const storyText = document.querySelector(".template1").textContent;
+  const storyTitle = document.querySelector("#title").value;
+  const plot1 = document.querySelector(".plot1").textContent;
+  const plot2 = document.querySelector(".plot2").textContent;
+  const plot3 = document.querySelector(".plot3").textContent;
+
+  console.log(storyTitle);
 
   if (canSaveData) {
-    const saveData = {"user": userId, "story": storyText, "cast": charList};
+    const saveData = {
+      user: userId,
+      title: storyTitle,
+      story: storyText,
+      cast: charList,
+      par1: plot1,
+      par2: plot2,
+      par3: plot3,
+    };
     dataService.postData(saveData);
-
   }
   //Title Crawl
   createCrawl();
-
 });
 
+const signInId = sessionStorage.getItem("user");
+
+if (signInId) {
+  const galleryPage = document.querySelector("#sign-up");
+  galleryPage.textContent = "Gallery";
+  galleryPage.setAttribute("href", "userGallery.html");
+}

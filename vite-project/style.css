@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   body {
     margin: 0;
     padding: 0;
@@ -201,24 +202,13 @@ h1 {
   text-align: center;
 }
 
-/* .crawl {
-  transform: rotate3d(1, 0, 0, 45deg);
-  transform-origin: 50% 100%;
-
-}*/
-
-
-
 .template {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   overflow: hidden;
+  font-family: "Roboto";
 }
 
-/* .template {
-  font-size: 2vw;
-  height: 300px;
-} */
 
 .template1 {
   
@@ -276,6 +266,68 @@ select {
 .movieTitle {
   font-family: sans-serif;
   text-transform: uppercase;
+}
+
+.plot {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/*User Gallery*/
+.gallery {
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryHero {
+  text-align: center;
+  font-family: "JediFont";
+}
+
+.gallery section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  color: black;
+  width: 200px;
+  border-radius: 15px;
+  font-family: "JediFont";
+  background-color: white;
+}
+
+/*User Moive Page*/
+.movie {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-transform: uppercase;
+  height: 300px;
+  font-size: 2vw;
+  color: yellow;
+  perspective: calc(100vh * 0.6);
+  font-family: "Roboto";
+}
+
+.movieTitle {
+  text-align: center;
+}
+
+.crawlDisplay {
+  transform: rotate3d(1, 0, 0, 45deg);
+  transform-origin: 50% 100%;
+}
+
+.crawlContentDis {
+  animation: titlecrawl 60s linear infinite;
+}
+
+.moviePlot {
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Roboto";
 }
 
 @-webkit-keyframes titlecrawl {
@@ -494,5 +546,5 @@ h1 {
 .dropdown a:hover {background-color: #ddd;}
 
 .show {display: block;}
-}}
+
 
