@@ -10,6 +10,7 @@ document.querySelector(".story").textContent = localStorage.getItem("story");
 document.querySelector(".part1").textContent = localStorage.getItem("par1");
 document.querySelector(".part2").textContent = localStorage.getItem("par2");
 document.querySelector(".part3").textContent = localStorage.getItem("par3");
+document.querySelector("#SWTheme").play();
 
 function makeCastList() {
     const cast = document.querySelector(".cast");
