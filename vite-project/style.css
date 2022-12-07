@@ -381,8 +381,30 @@ select {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
-/*Template Page*/
+/*Character Gallery*/
 
+/*Character Info*/
+.characterInfo {
+  width: 300px;
+  font-size: 10px;
+  align-items: center;
+}
+
+.characterInfo img {
+  width: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.characterInfo h1 {
+  font-size: 10px;
+}
+
+
+/*Template Page*/
+.hero h1 {
+  font-size: 15px;
+}
 
  
 @media (prefers-color-scheme: light) {
