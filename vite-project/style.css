@@ -95,6 +95,160 @@ h1 {
     padding-left: 15px;
   }
 
+/* Home Page */
+.banner_wrapper {
+  background-image: url('images/home_background.jpg');
+}
+.next_arrow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  background: url('images/next3.png') center center no-repeat;
+  background-size: 60%;
+}
+.prev_arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+  background: url('images/next3.png') center center no-repeat;
+  background-size: 60%;
+  transform: rotate(180deg);
+}
+.banner {
+  position: relative;
+  max-width: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+.home_input {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.home_input + .home_input {
+  right: auto;
+  left: 0;
+
+}
+label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+.banner_box {
+  margin: 0 auto;
+  padding: 30px;
+  width: 80%;
+  height: 100vh;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  
+}
+.banner_box:first-of-type {
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+}
+.first_p {
+  color: white;
+  z-index: 10;
+  text-align: center;
+  font-family: "JediFont", Arial, Helvetica, sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.explanation {
+  font-family: 'Sawarabi Gothic', sans-serif;
+  padding: 20px;
+}
+.first_header {
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "JediFont", Arial, Helvetica, sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.second_header {
+  color: white;
+  z-index: 10;
+  position: absolute;
+  top: 3%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "JediFont", Arial, Helvetica, sans-serif;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #FFE81F, 0 0 20px #FFE81F, 0 0 30px #FFE81F, 0 0 40px #FFE81F, 0 0 50px #FFE81F, 0 0 60px #FFE81F, 0 0 70px #FFE81F;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #000000, 0 0 40px #000000, 0 0 50px #000000, 0 0 60px #000000, 0 0 70px #000000, 0 0 80px #000000;
+  }
+}
+.second_image {
+  position: absolute;
+  width: 40%;
+  top: 25%;
+  left: 30%;
+  background-color: #555;
+  box-shadow: 0 0 5px 10px #555;
+  display: flex;
+}
+.third_link {
+  position: absolute;
+  top: 88%;
+  left: 45%;
+  background-color: #e6e6ff;
+  color: #595959;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  font-weight: bold;
+}
+
+.home_label:first-of-type,
+.home_input:first-of-type {
+  z-index: 3;
+}
+.home_label:checked {
+  z-index: 1;
+}
+.home_input:checked + .home_input + .home_label + .banner_box + .home_input {
+  z-index: 4;
+}
+.home_input:checked + .home_input + .home_label + .banner_box + .home_input + .home_input + .home_label {
+  z-index: 4;
+}
+.home_input:checked + .home_input + .home_label + .banner_box {
+  opacity: 0;
+  z-index: 0;
+}
+.home_input:checked + .home_input + .home_label + .banner_box + .home_input + .home_input + .home_label + .banner_box {
+  z-index: 2;
+  opacity: 1;
+}
+
   /* Register page start */
   .registerContent {
     margin: 1rem auto;
@@ -376,11 +530,41 @@ select {
   .topnav a.icon {
     display: none;
   }
+  .first_header {
+    font-size: 1.2em;
+  }
+  .second_header {
+    font-size: 2em;
+  }
+  .third_link {
+    top: 60%;
+    left: 40%;
+  }
 }
 @media screen and (max-width: 400px) {
   body {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
+  .explanation {
+    padding: 20px;
+    color: white;
+  }
+  .next_arrow, .prev_arrow {
+    width: 3em;
+  }
+  .third_link {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    background-color: #e6e6ff;
+    color: #595959;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    font-weight: bold;
+  }
+/*Template Page*/
 
 /*Character Gallery*/
 
