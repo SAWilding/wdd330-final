@@ -39,3 +39,11 @@ export async function fetchJson() {
 
   res.forEach(displayName);
   }
+
+  const signInId = sessionStorage.getItem("user");
+
+if (signInId) {
+    const galleryPage = document.querySelector("#sign-up");
+    galleryPage.textContent = "Gallery";
+    galleryPage.setAttribute("href", "userGallery.html");
+}

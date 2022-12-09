@@ -14,17 +14,70 @@
       "email": "sethwilding@byui.edu",
       "password": "password",
       "id": 3
+    },
+    {
+      "email": "dtscott98@gmail.com",
+      "password": "fallout",
+      "id": 4
     }
   ],
   "userData": [
     {
-      "user": "1",
-      "story": "\n          \n          \n        \n          After a decade of peace in the galaxy, the\n          Galactic Republic\n          has struck again!\n          Luke Skywalker\n          along with the help of the\n          Galactic Republic\n          have set up base on\n          Tatooine\n          in order to devise a defensive strategy. Meanwhile\n          Luke Skywalker\n          has launched a fleet of\n          CR90 corvettes to attack the planet\n         Tatooine. Many hope that\n          Luke Skywalker\n          who has been a hero to the galaxy in the past will rise again to\n          defeat the\n          Galactic Republic\n          once and for all.\n        \n        \n        \n        ",
+      "user": "4",
+      "title": "A New Movie",
+      "story": "\n              After a decade of peace in the galaxy, the\n              Galactic Republic\n              has struck again!\n              Leia Organa\n              along with the help of the\n              Galactic Republic\n              have set up base on\n              Tatooine\n              in order to devise a defensive strategy. Meanwhile\n              Kylo Ren\n              has launched a fleet of\n              Star Destroyers to attack the planet\n              Tatooine. Many hope that\n              Luke Skywalker\n              who has been a hero to the galaxy in the past will rise again to\n              defeat the\n              Galactic Republic\n              once and for all.\n            ",
+      "cast": [
+        "Leia Organa",
+        "Kylo Ren",
+        "Luke Skywalker",
+        "Rey",
+        "Yoda",
+        "Qui-Gon Jinn",
+        "Padmé Amidala",
+        "Darth Maul",
+        "Kit Fisto",
+        "Dooku"
+      ],
+      "par1": "\n          In order to seek guidance from the force\n          Rey boards\n          her CR90 corvette with\n          her trusty droid\n          Luke Skywalker and travels to the planet\n          Tatooine. Upon arriving,\n          she begins to meditate and is greeted by\n          Force Ghost Yoda. Force Ghost\n          Yoda tells\n          her that\n          she needs to travel to planet\n          Coruscant in order to find and learn the ways of\n          ancient Jedi Master Qui-Gon Jinn. Upon arrival to\n          the planet, Rey is ambushed by\n          Galactic Republic troopers. she is able to hold\n          her own agaisnt the troopers at first, but begins to fail after\n          reinforcements are called. Out of nowhere, ancient Jedi Master\n          Qui-Gon Jinn shows up and uses the force to send a\n          powerful shockwave through the ground. The troopers begin to retreat.\n          The two then begin the training that was ordered by Force Ghost\n          Yoda.\n        ",
+      "par2": "\n          Back on planet Tatooine, Senator\n          Padmé Amidala is working with the\n          Galactic Republic and plans to lead an attack on the\n          Galactic Empire before they continue their conquest.\n          Before anything can be done, Star Destroyers swoop\n          down from the sky and begin to fire upon the city. A brigade of\n          Sith troopers led by\n          Sith Lord\n          Darth Maul begin to invade the city and take\n          several prisoners. One of these happens to be Senator\n          Padmé Amidala. General\n          Kit Fisto attempts to save the senator by firing\n          at Sith Lord\n          Dooku but succumbs to a lightsaber wound.\n          All seems lost.\n        ",
+      "par3": "\n          Just as everyone is about to give up hope\n          Rey shows up having completed her\n          training with the ancient Jedi Master. she begins to tear down\n          troopers left and right and storms into the capital building where the\n          senator is being held. There, she confronts\n          Darth Maul and the two engage in a lightsaber\n          duel. After a long an intense struggle,\n          Rey finally gains the high ground and\n          strikes Darth Maul down. with this victory, the\n          Galactic Empire\n          retreats and the Galactic Republic gains control of\n          the Galaxy once more.\n          Peace\n          is restored.\n        ",
+      "id": 1
+    },
+    {
+      "user": "4",
+      "title": "A New Movie 2",
+      "story": "\n              After a decade of peace in the galaxy, the\n              Galactic Empire\n              has struck again!\n              Han Solo\n              along with the help of the\n              Galactic Republic\n              have set up base on\n              Tatooine\n              in order to devise a defensive strategy. Meanwhile\n              Anakin Skywalker\n              has launched a fleet of\n              CR90 corvettes to attack the planet\n              Tatooine. Many hope that\n              Luke Skywalker\n              who has been a hero to the galaxy in the past will rise again to\n              defeat the\n              Galactic Republic\n              once and for all.\n            ",
+      "cast": [
+        "Han Solo",
+        "Anakin Skywalker",
+        "Luke Skywalker",
+        "R2-D2",
+        "Obi-Wan Kenobi",
+        "Mace Windu",
+        "Chewbacca",
+        "Grievous",
+        "Poe Dameron",
+        "Qui-Gon Jinn",
+        "Darth Maul",
+        "Darth Vader",
+        "Dooku"
+      ],
+      "par1": "\n          In order to seek guidance from the force\n          Luke Skywalker boards\n          his CR90 corvette with\n          his trusty droid\n          R2-D2 and travels to the planet\n          Tatooine. Upon arriving,\n          he begins to meditate and is greeted by\n          Force Ghost Obi-Wan Kenobi. Force Ghost\n          Obi-Wan Kenobi tells\n          him that\n          he needs to travel to planet\n          Tatooine in order to find and learn the ways of\n          ancient Jedi Master Luke Skywalker. Upon arrival to\n          the planet, Luke Skywalker is ambushed by\n          Galactic Republic troopers. he is able to hold\n          his own agaisnt the troopers at first, but begins to fail after\n          reinforcements are called. Out of nowhere, ancient Jedi Master\n          Mace Windu shows up and uses the force to send a\n          powerful shockwave through the ground. The troopers begin to retreat.\n          The two then begin the training that was ordered by Force Ghost\n          Luke Skywalker.\n        ",
+      "par2": "\n          Back on planet Tatooine, Senator\n          Chewbacca is working with the\n          Galactic Republic and plans to lead an attack on the\n          Galactic Republic before they continue their conquest.\n          Before anything can be done, CR90 corvettes swoop\n          down from the sky and begin to fire upon the city. A brigade of\n          Galactic Republic troopers led by\n          Galactic Republic Lord\n          Grievous begin to invade the city and take\n          several prisoners. One of these happens to be Senator\n          Poe Dameron. General\n          Qui-Gon Jinn attempts to save the senator by firing\n          at Galactic Republic Lord\n          Darth Maul but succumbs to a lightsaber wound.\n          All seems lost.\n        ",
+      "par3": "\n          Just as everyone is about to give up hope\n          Luke Skywalker shows up having completed his\n          training with the ancient Jedi Master. he begins to tear down\n          troopers left and right and storms into the capital building where the\n          senator is being held. There, he confronts\n          Darth Vader and the two engage in a lightsaber\n          duel. After a long an intense struggle,\n          Luke Skywalker finally gains the high ground and\n          strikes Dooku down. with this victory, the\n          Sith\n          retreats and the Jedi Order gains control of\n          the Galaxy once more.\n          Peace\n          is restored.\n        ",
+      "id": 2
+    },
+    {
+      "user": "4",
+      "title": "",
+      "story": "\n              After a decade of peace in the galaxy, the\n              Galactic Republic\n              has struck again!\n              Luke Skywalker\n              along with the help of the\n              Galactic Republic\n              have set up base on\n              Tatooine\n              in order to devise a defensive strategy. Meanwhile\n              Luke Skywalker\n              has launched a fleet of\n              CR90 corvettes to attack the planet\n              Tatooine. Many hope that\n              Luke Skywalker\n              who has been a hero to the galaxy in the past will rise again to\n              defeat the\n              Galactic Republic\n              once and for all.\n            ",
       "cast": [
         "Luke Skywalker"
       ],
-      "id": 1
+      "par1": "\n          In order to seek guidance from the force\n          Luke Skywalker boards\n          his CR90 corvette with\n          his trusty droid\n          Luke Skywalker and travels to the planet\n          Tatooine. Upon arriving,\n          he begins to meditate and is greeted by\n          Force Ghost Luke Skywalker. Force Ghost\n          Luke Skywalker tells\n          him that\n          he needs to travel to planet\n          Tatooine in order to find and learn the ways of\n          ancient Jedi Master Luke Skywalker. Upon arrival to\n          the planet, Luke Skywalker is ambushed by\n          Galactic Republic troopers. he is able to hold\n          his own agaisnt the troopers at first, but begins to fail after\n          reinforcements are called. Out of nowhere, ancient Jedi Master\n          Luke Skywalker shows up and uses the force to send a\n          powerful shockwave through the ground. The troopers begin to retreat.\n          The two then begin the training that was ordered by Force Ghost\n          Luke Skywalker.\n        ",
+      "par2": "\n          Back on planet Tatooine, Senator\n          Luke Skywalker is working with the\n          Galactic Republic and plans to lead an attack on the\n          Galactic Republic before they continue their conquest.\n          Before anything can be done, CR90 corvettes swoop\n          down from the sky and begin to fire upon the city. A brigade of\n          Galactic Republic troopers led by\n          Galactic Republic Lord\n          Luke Skywalker begin to invade the city and take\n          several prisoners. One of these happens to be Senator\n          Luke Skywalker. General\n          Luke Skywalker attempts to save the senator by firing\n          at Galactic Republic Lord\n          Luke Skywalker but succumbs to a lightsaber wound.\n          All seems lost.\n        ",
+      "par3": "\n          Just as everyone is about to give up hope\n          Luke Skywalker shows up having completed his\n          training with the ancient Jedi Master. he begins to tear down\n          troopers left and right and storms into the capital building where the\n          senator is being held. There, he confronts\n          Luke Skywalker and the two engage in a lightsaber\n          duel. After a long an intense struggle,\n          Luke Skywalker finally gains the high ground and\n          strikes Luke Skywalker down. with this victory, the\n          Galactic Republic\n          retreats and the Galactic Republic gains control of\n          the Galaxy once more.\n          Peace\n          is restored.\n        ",
+      "id": 3
     }
-
   ]
 }

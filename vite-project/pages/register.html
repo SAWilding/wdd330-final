@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/tab.png">
     <script src="../js/authentication.js" type="module" defer></script>
 </head>
 <body>
@@ -14,9 +15,9 @@
           <!-- Top Navigation Menu -->
           <div class="topnav">
             <div id="myLinks">
-              <a href="#about" class="headerLinkLeft">About</a>
+              <a href="posters.html" class="headerLinkLeft">Posters</a>
               <a href="./template.html" class="headerLinkLeft">Build</a>
-              <a class="logoLink" href="../index.html"><img class="headerLogo" src="../logo.png"></a>
+              <a class="logoLink" href="../index.html"><img class="headerLogo" src="../images/final_logo.png"></a>
               <a href="./character.html" class="headerLinkRight">Gallery</a>
               <a href="#" class="headerLinkRight signUp">Sign up</a>
             </div>
@@ -38,7 +39,7 @@
                     
                     <input type="password" name="password" required placeholder="Password" minlength="6">
                 </label>
-                <input type="submit" value="Register" class="submitButton">
+                <input type="submit" value="Register" class="finish submitButton">
             </form>
             <br>
             <p>Login</p>
@@ -51,13 +52,14 @@
                     
                     <input type="password" name="password" placeholder="Password" required minlength="6">
                 </label>
-                <input type="submit" value="Login" class="submitButton">
+                <input type="submit" value="login" class="finish submitButton">
             </form>
 
         </div>
+        <div class="loggedIn"><p>You are currently logged in!</p></div>
     </main>
     <footer>
-        <p>&copy; Company Name 2022 | Not a Real Business</p>
+        <p>&copy; Your Rise to the Force 2022 | Not a Real Business</p>
     </footer>
 </body>
 </html>

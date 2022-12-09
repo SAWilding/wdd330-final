@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../images/tab.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css">
+    <script src="../main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Star Wars Posters</title>
+  </head>
+  <body>
+    <header>
+    <div class="mobile-container">
+      <!-- Top Navigation Menu -->
+      <div class="topnav">
+        <div id="myLinks">
+          <a href="posters.html" class="headerLinkLeft">Posters</a>
+          <a href="template.html" class="headerLinkLeft">Build</a>
+          <a class="logoLink" href="../index.html"><img class="headerLogo" src="../images/final_logo.png"></a>
+          <a href="character.html" class="headerLinkRight">Gallery</a>
+          <a href="register.html" class="headerLinkRight signUp">Sign up</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i style="font-size:24px" class="fa">&#xf0c9;</i>
+        </a>
+      </div>
+  </div>
+    </header>
+    <main>
+        <!-- MAIN (Center website) -->
+<div class="main">
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Show All &#8595;</button>
+        <div id="myDropdown" class="dropdown-content">
+            <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+            <button class="btn" onclick="filterSelection('the_phantom_menace')">THE PHANTOM MENACE</button>
+            <button class="btn" onclick="filterSelection('attack_of_the_clones')">ATTACK OF THE CLONES</button>
+            <button class="btn" onclick="filterSelection('clone_wars')">THE CLONE WARS</button>
+            <button class="btn" onclick="filterSelection('revenge_sith')">REVENGE OF THE SITH</button>
+            <button class="btn" onclick="filterSelection('solo_story')">SOLO: A STAR WARS STORY</button>
+            <button class="btn" onclick="filterSelection('obi_wan')">OBI-WAN KENOBI</button>
+            <button class="btn" onclick="filterSelection('rebels')">STAR WARS REBELS</button>
+            <button class="btn" onclick="filterSelection('andor')">ANDOR</button>
+            <button class="btn" onclick="filterSelection('rogue_one')">ROGUE ONE: A STAR WARS STORY</button>
+            <button class="btn" onclick="filterSelection('new_hope')">STAR WARS: EPISODE IV - A NEW HOPE</button>
+            <button class="btn" onclick="filterSelection('empire_strikes_back')">STAR WARS: EPISODE V - THE EMPIRE STRIKES BACK</button>
+            <button class="btn" onclick="filterSelection('return_of_jedi')">STAR WARS: EPISODE VI -- RETURN OF THE JEDI</button>
+        </div>
+      </div>
+    
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column the_phantom_menace">
+        <div class="content">
+          <img src="../images/episode_1_poster1.jpg" alt="the_phantom_menace" style="width:100%">
+          <h4>THE PHANTOM MENACE</h4>
+          <p>1999</p>
+        </div>
+      </div>
+      <div class="column the_phantom_menace">
+        <div class="content">
+        <img src="../images/episode_1_poster2.jpg" alt="the_phantom_menace" style="width:100%">
+          <h4>The Phantom Menace</h4>
+          <p>1999</p>
+        </div>
+      </div>
+      <div class="column the_phantom_menace">
+        <div class="content">
+        <img src="../images/episode_1_poster3.jpg" alt="the_phantom_menace" style="width:100%">
+          <h4>The Phantom Menace</h4>
+          <p>1999</p>
+        </div>
+      </div>
+      
+      <div class="column attack_of_the_clones">
+        <div class="content">
+          <img src="../images/episode_2_poster1.jpg" alt="attack_of_the_clones" style="width:100%">
+          <h4>Attack of the Clones</h4>
+          <p>2002</p>
+        </div>
+      </div>
+      <div class="column attack_of_the_clones">
+        <div class="content">
+        <img src="../images/episode_2_poster2.jpg" alt="attack_of_the_clones" style="width:100%">
+          <h4>Attack of the Clones</h4>
+          <p>2002</p>
+        </div>
+      </div>
+      <div class="column attack_of_the_clones">
+        <div class="content">
+        <img src="../images/episode_2_poster3.jpg" alt="attack_of_the_clones" style="width:100%">
+          <h4>Attack of the Clones</h4>
+          <p>2002</p>
+        </div>
+      </div>
+    
+      <div class="column clone_wars">
+        <div class="content">
+          <img src="../images/episode_3_poster1.jpg" alt="clone_wars" style="width:100%">
+          <h4>The Clone Wars</h4>
+          <p>2008</p>
+        </div>
+      </div>
+      <div class="column clone_wars">
+        <div class="content">
+        <img src="../images/episode_3_poster2.png" alt="clone_wars" style="width:100%">
+          <h4>The Clone Wars</h4>
+          <p>2008</p>
+        </div>
+      </div>
+      <div class="column clone_wars">
+        <div class="content">
+        <img src="../images/episode_3_poster3.jpeg" alt="clone_wars" style="width:100%">
+          <h4>The Clone Wars</h4>
+          <p>2008</p>
+        </div>
+    </div>
+        <div class="column revenge_sith">
+            <div class="content">
+            <img src="../images/episode_4_poster1.jpg" alt="revenge_sith" style="width:100%">
+              <h4>Revenge of the Sith</h4>
+              <p>2005</p>
+            </div>
+            </div>
+        <div class="column revenge_sith">
+            <div class="content">
+                <img src="../images/episode_4_poster2.jpg" alt="revenge_sith" style="width:100%">
+                <h4>Revenge of the Sith</h4>
+                <p>2005</p> 
+            </div>
+            </div>
+        <div class="column revenge_sith">
+            <div class="content">
+                <img src="../images/episode_4_poster3.jpg" alt="revenge_sith" style="width:100%">
+                <h4>Revenge of the Sith</h4>
+                <p>2005</p>
+            </div>
+      </div>
+    <div class="column solo_story">
+        <div class="content">
+            <img src="../images/episode_5_poster1.jpg" alt="solo_story" style="width:100%">
+            <h4>SOLO: A STAR WARS STORY</h4>
+            <p>2018</p>
+        </div>
+    </div>
+    <div class="column solo_story">
+        <div class="content">
+            <img src="../images/episode_5_poster2.jpg" alt="solo_story" style="width:100%">
+            <h4>SOLO: A STAR WARS STORY</h4>
+            <p>2018</p>
+        </div>
+    </div>
+    <div class="column solo_story">
+        <div class="content">
+            <img src="../images/episode_5_poster3.jpg" alt="solo_story" style="width:100%">
+            <h4>SOLO: A STAR WARS STORY</h4>
+            <p>2018</p>
+        </div>
+    </div>
+    <div class="column obi_wan">
+        <div class="content">
+            <img src="../images/episode_6_poster1.jpg" alt="obi_wan" style="width:100%">
+            <h4>OBI-WAN KENOBI</h4>
+            <p>2022</p>
+        </div>
+    </div>
+    <div class="column obi_wan">
+        <div class="content">
+            <img src="../images/episode_6_poster2.jpg" alt="obi_wan" style="width:100%">
+            <h4>OBI-WAN KENOBI</h4>
+            <p>2022</p>
+        </div>
+    </div>
+    <div class="column obi_wan">
+        <div class="content">
+            <img src="../images/episode_6_poster3.jpg" alt="obi_wan" style="width:100%">
+            <h4>OBI-WAN KENOBI</h4>
+            <p>2022</p>
+        </div>
+    </div>
+    <div class="column rebels">
+        <div class="content">
+            <img src="../images/episode_7_poster1.jpg" alt="rebels" style="width:100%">
+            <h4>STAR WARS REBELS</h4>
+            <p>2014</p>
+        </div>
+    </div>
+    <div class="column rebels">
+        <div class="content">
+            <img src="../images/episode_7_poster2.jpg" alt="rebels" style="width:100%">
+            <h4>STAR WARS REBELS</h4>
+            <p>2014</p>
+        </div>
+    </div>
+    <div class="column rebels">
+        <div class="content">
+            <img src="../images/episode_7_poster3.jpg" alt="rebels" style="width:100%">
+            <h4>STAR WARS REBELS</h4>
+            <p>2014</p>
+        </div>
+    </div>
+    <div class="column andor">
+        <div class="content">
+            <img src="../images/episode_8_poster1.jpg" alt="andor" style="width:100%">
+            <h4>ANDOR</h4>
+            <p>2022</p>
+        </div>
+    </div>
+    <div class="column andor">
+        <div class="content">
+            <img src="../images/episode_8_poster2.jpeg" alt="andor" style="width:100%">
+            <h4>ANDOR</h4>
+            <p>2022</p>
+        </div>
+    </div>
+    <div class="column andor">
+        <div class="content">
+            <img src="../images/episode_8_poster3.jpeg" alt="andor" style="width:100%">
+            <h4>ANDOR</h4>
+            <p>2022</p>
+        </div>
+    </div>
+    <div class="column rogue_one">
+        <div class="content">
+            <img src="../images/episode_9_poster1.jpg" alt="rogue_one" style="width:100%">
+            <h4>ROGUE ONE: A STAR WARS STORY</h4>
+            <p>2016</p>
+        </div>
+    </div>
+    <div class="column rogue_one">
+        <div class="content">
+            <img src="../images/episode_9_poster2.jpg" alt="rogue_one" style="width:100%">
+            <h4>ROGUE ONE: A STAR WARS STORY</h4>
+            <p>2016</p>
+        </div>
+    </div>
+    <div class="column rogue_one">
+        <div class="content">
+            <img src="../images/episode_9_poster3.jpg" alt="rogue_one" style="width:100%">
+            <h4>ROGUE ONE: A STAR WARS STORY</h4>
+            <p>2016</p>
+        </div>
+    </div>
+    <div class="column new_hope">
+        <div class="content">
+            <img src="../images/episode_10_poster1.jpg" alt="new_hope" style="width:100%">
+            <h4>STAR WARS: EPISODE IV -- A NEW HOPE</h4>
+            <p>1977</p>
+        </div>
+    </div>
+    <div class="column new_hope">
+        <div class="content">
+            <img src="../images/episode_10_poster2.jpg" alt="new_hope" style="width:100%">
+            <h4>STAR WARS: EPISODE IV -- A NEW HOPE</h4>
+            <p>1977</p>
+        </div>
+    </div>
+    <div class="column new_hope">
+        <div class="content">
+            <img src="../images/episode_10_poster3.jpg" alt="new_hope" style="width:100%">
+            <h4>STAR WARS: EPISODE IV -- A NEW HOPE</h4>
+            <p>1977</p>
+        </div>
+    </div>
+    <div class="column empire_strikes_back">
+        <div class="content">
+            <img src="../images/episode_11_poster1.jpg" alt="empire_strikes_back" style="width:100%">
+            <h4>STAR WARS: EPISODE V -- THE EMPIRE STRIKES BACK</h4>
+            <p>1980</p>
+        </div>
+    </div>
+    <div class="column empire_strikes_back">
+        <div class="content">
+            <img src="../images/episode_11_poster2.jpg" alt="empire_strikes_back" style="width:100%">
+            <h4>STAR WARS: EPISODE V -- THE EMPIRE STRIKES BACK</h4>
+            <p>1980</p>
+        </div>
+    </div>
+    <div class="column empire_strikes_back">
+        <div class="content">
+            <img src="../images/episode_11_poster3.jpg" alt="empire_strikes_back" style="width:100%">
+            <h4>STAR WARS: EPISODE V -- THE EMPIRE STRIKES BACK</h4>
+            <p>1980</p>
+        </div>
+    </div>
+    <div class="column return_of_jedi">
+        <div class="content">
+            <img src="../images/episode_12_poster1.jpg" alt="return_of_jedi" style="width:100%">
+            <h4>STAR WARS: EPISODE VI -- RETURN OF THE JEDI</h4>
+            <p>1983</p>
+        </div>
+    </div>
+    <div class="column return_of_jedi">
+        <div class="content">
+            <img src="../images/episode_12_poster2.jpg" alt="return_of_jedi" style="width:100%">
+            <h4>STAR WARS: EPISODE VI -- RETURN OF THE JEDI</h4>
+            <p>1983</p>
+        </div>
+    </div>
+    <div class="column return_of_jedi">
+        <div class="content">
+            <img src="../images/episode_12_poster3.jpg" alt="return_of_jedi" style="width:100%">
+            <h4>STAR WARS: EPISODE VI -- RETURN OF THE JEDI</h4>
+            <p>1983</p>
+        </div>
+    </div>
+    <!-- END GRID -->
+    </div>
+    
+    <!-- END MAIN -->
+    </div>
+    </main>
+    <hr>
+    <footer>
+      <p>&copy; Your Rise to the Force 2022 | Not a Real Business</p>
+    </footer>
+    <script>
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("column");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+        
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+        
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
+
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+        }
+        }
+        </script>
+  </body>
+</html>

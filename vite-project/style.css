@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   body {
     margin: 0;
     padding: 0;
@@ -24,7 +25,7 @@
     font-size: 1.2rem;
   }
   .headerLogo {
-    width: 45%;
+    width: 55%;
     padding: 15px;
   }
   
@@ -96,19 +97,20 @@ h1 {
   /* Register page start */
   .registerContent {
     margin: 1rem auto;
-    background-color: #e6e6ff;
+    background-color: #595959;
     max-width: 400px;
     padding: 1rem;
     border-radius: 10px;
-    color: black;
+    color: white;
   }
 
   .registerContent p {
     font-size: 1.5rem;
+    font-family: "JediFont", Arial, Helvetica, sans-serif;
   }
 
   .registerContent form {
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 10px;
   }
 
@@ -126,14 +128,7 @@ h1 {
     max-width: 175px;
   }
 
-  .submitButton {
-    background-color: gray;
-    color: white;
-    box-shadow: 2px 2px 5px #ffffff;
-    border: none;
-    border-radius: 5px;
-    padding: 0.5rem;
-  }
+
 
   .submitButton:hover {
     background-color: white;
@@ -201,24 +196,13 @@ h1 {
   text-align: center;
 }
 
-/* .crawl {
-  transform: rotate3d(1, 0, 0, 45deg);
-  transform-origin: 50% 100%;
-
-}*/
-
-
-
 .template {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   overflow: hidden;
+  font-family: "Roboto";
 }
 
-/* .template {
-  font-size: 2vw;
-  height: 300px;
-} */
 
 .template1 {
   
@@ -278,6 +262,68 @@ select {
   text-transform: uppercase;
 }
 
+.plot {
+  margin: 0 auto;
+  width: 60%;
+}
+
+/*User Gallery*/
+.gallery {
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.galleryHero {
+  text-align: center;
+  font-family: "JediFont";
+}
+
+.gallery section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  color: black;
+  width: 200px;
+  border-radius: 15px;
+  font-family: "JediFont";
+  background-color: white;
+}
+
+/*User Moive Page*/
+.movie {
+  width: 60%;
+  margin: 0 auto;
+  overflow: hidden;
+  text-transform: uppercase;
+  height: 300px;
+  font-size: 2vw;
+  color: yellow;
+  perspective: calc(100vh * 0.6);
+  font-family: "Roboto";
+}
+
+.movieTitle {
+  text-align: center;
+}
+
+.crawlDisplay {
+  transform: rotate3d(1, 0, 0, 45deg);
+  transform-origin: 50% 100%;
+}
+
+.crawlContentDis {
+  animation: titlecrawl 60s linear infinite;
+}
+
+.moviePlot {
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Roboto";
+}
+
 @-webkit-keyframes titlecrawl {
   from { -webkit-transform: translateY(100%); }
   to { -webkit-transform: translateY(-100%); }
@@ -335,8 +381,30 @@ select {
     font-family: 'Sawarabi Gothic', sans-serif;
 }
 
-/*Template Page*/
+/*Character Gallery*/
 
+/*Character Info*/
+.characterInfo {
+  width: 300px;
+  font-size: 10px;
+  align-items: center;
+}
+
+.characterInfo img {
+  width: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.characterInfo h1 {
+  font-size: 10px;
+}
+
+
+/*Template Page*/
+.hero h1 {
+  font-size: 15px;
+}
 
  
 @media (prefers-color-scheme: light) {
@@ -381,5 +449,118 @@ select {
   .headerLogo {
     width: 5rem;
   }
-  
-}}
+}
+}
+
+/* Posters Page! */
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  display: none; /* Hide all elements by default */
+  height: 100%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  color: #595959;
+  padding: 10px;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  text-align: center;
+  background-color: white;
+  cursor: pointer;
+  width: 100%;
+  font-family: 'Sawarabi Gothic', sans-serif;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+.dropbtn {
+  background-color: #e6e6ff;
+  font-family: 'Sawarabi Gothic', sans-serif;
+  color: #595959;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #595959;
+  color: white;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+
