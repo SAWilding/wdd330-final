@@ -507,6 +507,7 @@ h1 {
   outline: none;
   text-align: center;
   background-color: white;
+  color: black;
   cursor: pointer;
   width: 100%;
   font-family: 'Sawarabi Gothic', sans-serif;
